@@ -1,0 +1,69 @@
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 50%;
+  border-top: 2px solid #e0e0e0;
+}
+.total--texto {
+  width: 50%;
+  text-align: initial;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.total--valor {
+  width: 50%;
+  text-align: end;
+  font-size: 12px;
+  font-weight: 500;
+  color: #828282;
+}
+
+.total--button {
+  width: 90%;
+  height: 40%;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #828282;
+  background-color: #e0e0e0;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.total--button:hover {
+  background-color: #b9b8b8;
+}
+.total--button:active {
+  background-color: #9c9c9c;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 800px) {
+  .total--texto {
+    font-size: 14px;
+  }
+  .total--valor {
+    font-size: 14px;
+  }
+  .total--button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .total--texto {
+    font-size: 16px;
+  }
+  .total--valor {
+    font-size: 16px;
+  }
+  .total--button {
+    font-size: 16px;
+  }
+}

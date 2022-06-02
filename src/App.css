@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.header--burguer {
+  background-color: #f5f5f5;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.header--logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+  height: 50%;
+}
+
+.header--logo h1 {
+  color: #333333;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.header--logo h2 {
+  color: #eb5757;
+  font-size: 20px;
+}
+
+.header--pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 4px;
+  height: 50%;
+  width: 80%;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.header--pesquisa input {
+  border: none;
+  width: 65%;
+  height: 90%;
+  font-family: "Inter", sans-serif;
+}
+
+.header--pesquisa button {
+  border: none;
+  border-radius: 5px;
+  background-color: #27ae60;
+  color: #ffffff;
+  padding: 4px;
+  height: 90%;
+  width: 32%;
+  text-align: center;
+  font-weight: 600;
+  font-size: calc(6px + 2vmin);
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.header--pesquisa button:hover {
+  background-color: #0f6633;
+  transition: 0.5s;
+}
+
+.container--produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 10px 0 10px;
+}
+
+.container--carrinho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px 10px 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .header--burguer {
+    flex-direction: row;
+    height: 14vh;
+  }
+  .header--logo {
+    margin-left: 5%;
+    align-items: baseline;
+    margin-bottom: 24px;
+  }
+  .header--logo h1 {
+    font-size: 24px;
+  }
+  .header--logo h2 {
+    font-size: 20px;
+  }
+  .header--pesquisa {
+    height: 40%;
+    width: 35%;
+    margin-right: 4%;
+    margin-bottom: 0;
+  }
+  .header--pesquisa input {
+    width: 65%;
+    height: 90%;
+    font-size: 8px;
+  }
+  .header--pesquisa button {
+    height: 90%;
+    font-size: 10px;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+  .container--produtos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3% 0 0 3%;
+    width: 60%;
+  }
+  .container--carrinho {
+    width: 40%;
+    margin: 3% 3% 0 1%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header--logo {
+    margin-left: 4%;
+  }
+  .header--pesquisa {
+    width: 25%;
+  }
+  .header--pesquisa input {
+    font-size: 10px;
+  }
+  .header--pesquisa button {
+    font-size: 12px;
+  }
+  .container--produtos {
+    width: 70%;
+  }
+  .container--carrinho {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header--logo h1 {
+    font-size: 26px;
+  }
+  .header--logo h2 {
+    font-size: 22px;
+  }
+
+  .header--pesquisa input {
+    font-size: 12px;
+  }
+  .header--pesquisa button {
+    font-size: 12px;
+  }
+}

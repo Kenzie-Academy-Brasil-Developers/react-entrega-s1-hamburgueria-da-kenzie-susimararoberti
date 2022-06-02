@@ -1,0 +1,138 @@
+.carrinho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin-top: 5%;
+}
+
+.carrinho--titulo {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  background-color: #27ae60;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 0;
+}
+
+.carrinho--titulo h2 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 5%;
+}
+
+.carrinho--produtos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #f5f5f5;
+}
+
+.produtos--img {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  width: 60px;
+  height: 60px;
+}
+
+.produtos--img img {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.produtos--texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.produtos--texto h3 {
+  margin: 2px 0;
+  font-weight: 700;
+  font-size: 14px;
+  height: 25px;
+  color: #333333;
+}
+
+.produtos--texto span {
+  font-size: 10px;
+  color: #828282;
+}
+
+.produtos--button {
+  padding-right: 5%;
+  display: flex;
+  align-items: flex-start;
+  height: 40px;
+}
+
+.produtos--button button {
+  border: none;
+  font-size: 10px;
+  color: #bdbdbd;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.produtos--button button:hover {
+  color: #353535;
+  transition: 0.3s;
+}
+
+.carrinho--total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: #f5f5f5;
+}
+
+@media screen and (min-width: 800px) {
+  .carrinho {
+    margin-top: 4%;
+  }
+  .produtos--texto h3 {
+    font-size: 16px;
+    padding-left: 2%;
+  }
+  .produtos--texto span {
+    font-size: 12px;
+    padding-left: 2%;
+  }
+  .produtos--button button {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carrinho {
+    margin-top: 3%;
+  }
+  .carrinho--titulo h2 {
+    font-size: 16px;
+  }
+  .produtos--texto h3 {
+    font-size: 18px;
+  }
+  .produtos--texto span {
+    font-size: 14px;
+  }
+  .produtos--button button {
+    font-size: 14px;
+  }
+  .carrinho--total {
+    height: 120px;
+  }
+}
