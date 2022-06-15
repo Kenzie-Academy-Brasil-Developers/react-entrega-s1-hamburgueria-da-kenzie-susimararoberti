@@ -29,9 +29,9 @@ function App() {
   useEffect(() => {
     try {
       const request = async () => {
-        const teste = await instance.get("/products");
-        setProducts(teste.data);
-        setFilteredProducts(teste.data);
+        const produtos = await instance.get("/products");
+        setProducts(produtos.data);
+        setFilteredProducts(produtos.data);
       };
       request();
     } catch (error) {
@@ -63,9 +63,11 @@ function App() {
       }
     });
 
-    const ehIgual = currentSale.find((produto) => produto.id === encontrado.id);
+    const produtoRepetido = currentSale.find(
+      (produto) => produto.id === encontrado.id
+    );
 
-    if (ehIgual?.id) {
+    if (produtoRepetido?.id) {
       notificacao();
     } else {
       setCurrentSale([...currentSale, encontrado]);

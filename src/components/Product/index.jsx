@@ -9,7 +9,9 @@ function Product({ product, handleClick }) {
   }
   return (
     <article className="card--produto">
-      <img className="produto--img" src={product.img} alt={product.name} />
+      <div className="produto--divimg">
+        <img className="produto--img" src={product.img} alt={product.name} />
+      </div>
       <div className="container--info">
         <h2 className="produto--nome">{name}</h2>
         <span className="produto--categoria">{product.category}</span>

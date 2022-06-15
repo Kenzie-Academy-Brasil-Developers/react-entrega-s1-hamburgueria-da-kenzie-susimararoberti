@@ -75,10 +75,9 @@
 
 .container--produtos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
   margin: 10px 10px 0 10px;
+  overflow: auto;
 }
 
 .container--carrinho {
@@ -127,6 +126,7 @@
   .container--produtos {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 3% 0 0 3%;
     width: 60%;
   }
@@ -151,6 +151,7 @@
   }
   .container--produtos {
     width: 70%;
+    align-items: center;
   }
   .container--carrinho {
     width: 30%;
